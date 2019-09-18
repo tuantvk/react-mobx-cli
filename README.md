@@ -22,6 +22,31 @@
 
 ```
 
+## Basic Mobx
+
+
+### Call api use `axios`
+
+```js
+@observable orders = [];
+
+
+@action async fetchApi() {
+
+  try {
+    const response = await axios.get(process.env.REACT_APP_API)
+
+    this.orders.replace(response.data.orders);
+
+  } catch (error) {
+    // error
+  }
+
+}
+```
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
