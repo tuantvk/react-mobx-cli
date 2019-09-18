@@ -22,10 +22,21 @@
 
 ```
 
-## Basic Mobx
+## Basic use
 
+### Clone project
 
-### Call api use `axios`
+```sh
+git clone https://github.com/tuantvk/react-mobx-cli.git
+
+cd react-mobx-cli
+
+npm install
+
+npm start
+```
+
+### Call api use `axios` in store mobx
 
 ```js
 @observable orders = [];
